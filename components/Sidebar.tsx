@@ -1,10 +1,19 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
+import Image from "next/image";
 
 function Sidebar() {
   return (
     <div>
+      {/* <div className='relative items-center justify-center flex-shrink-0 w-60 h-60 md:h-52 md:w-80 '>
+      <Image
+        src={`/images/avatar.jpg`}
+        layout="fill"
+        alt="User Avatar"
+        objectFit="cover"
+      />
+      </div> */}
       <img
         src={`/images/avatar.jpg`}
         alt="User Avatar"
@@ -55,6 +64,6 @@ function Sidebar() {
       </button>
     </div>
   );
-};
+}
 
 export default Sidebar;
