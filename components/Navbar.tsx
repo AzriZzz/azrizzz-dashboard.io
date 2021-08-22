@@ -18,7 +18,7 @@ const NavItem: FunctionComponent<{
   ) : null;
 };
 
-const Navbar = () => {
+function Navbar() {
   const [activeItem, setActiveItem] = useState<string>("");
 
   const { pathname } = useRouter();

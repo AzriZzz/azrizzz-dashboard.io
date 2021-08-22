@@ -1,7 +1,7 @@
 import { FiMonitor } from "react-icons/fi";
 import { services } from "../data";
 
-const index = ({services}) => {
+function index({services}) {
   return (
     <div className="p-4">
       <div className="mb-12">
