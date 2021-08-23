@@ -19,9 +19,8 @@ function Sidebar() {
         alt="User Avatar"
         className="w-32 h-32 mx-auto rounded-full"
       />
-      <h3 className="my-4 text-3xl font-medium tracking-wider font-urbanist">
-        <span className="text-green">Azri</span>
-        Zzz
+      <h3 className="my-4 text-xl tracking-wider font-sm">
+        Muhammad Azri
       </h3>
       <p className="px-2 py-1 my-3">Frontend Engineer</p>
       <a
