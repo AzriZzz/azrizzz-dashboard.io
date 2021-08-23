@@ -1,8 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next";
 
-import {services} from'../../data'
+import { services } from "../../data";
 
-export default function Service(req: NextApiRequest, res: NextApiResponse) {
+export async function Service(req: NextApiRequest, res: NextApiResponse) {
   // by default get request services
-  res.status(200).json({services});
-};
+  res.status(200).json({ services });
+}
