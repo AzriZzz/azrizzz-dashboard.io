@@ -35,27 +35,22 @@ export const languages: ISkill[] = [
   {
     Icon: BsCircleFill,
     name: "Angular",
-    level: "80",
+    level: "80%",
   },
   {
     Icon: BsCircleFill,
     name: "Javascript",
-    level: "80",
+    level: "90%",
   },
   {
     Icon: BsCircleFill,
     name: "React",
-    level: "70",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "React",
-    level: "80",
+    level: "75%",
   },
   {
     Icon: BsCircleFill,
     name: "Nestjs",
-    level: "80",
+    level: "60%",
   },
 ]
 
@@ -63,15 +58,15 @@ export const tools: ISkill[] = [
   {
     Icon: BsCircleFill,
     name: "Figma",
-    level: "85",
+    level: "85%",
   },{
     Icon: BsCircleFill,
     name: "Adobe XD",
-    level: "60",
+    level: "60%",
   },
   {
     Icon: BsCircleFill,
     name: "Photoshop",
-    level: "45",
+    level: "45%",
   },
 ]
