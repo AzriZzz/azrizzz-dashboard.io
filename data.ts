@@ -2,7 +2,7 @@ import { RiComputerLine } from "react-icons/ri";
 import { FaServer } from "react-icons/fa";
 import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
 import { MdDeveloperMode } from "react-icons/md";
-import { IService, ISkill } from "./type";
+import { IProject, IService, ISkill } from "./type";
 
 import { BsCircleFill } from "react-icons/bs";
 
@@ -69,4 +69,34 @@ export const tools: ISkill[] = [
     name: "Photoshop",
     level: "45%",
   },
+]
+
+export const projects: IProject[] = [
+  {
+    name: 'AirBnb Clone',
+    description: 'Airbnb Clone build on top of Next.js, Tailwind, Date-picker, Calender functionality, Mapbox Integration.',
+    image_path: '/images/airbnb_portfolio.png',
+    deployed_url: 'https://airbnb-clone-kappa-red.vercel.app/',
+    github_url: 'https://github.com/AzriZzz/airbnb-clone-nextjs',
+    category: ['react'],
+    technologies: ['React','NextJs', 'Mapnext', 'Tailwind']
+  },
+  {
+    name: 'Amazon Clone',
+    description: 'Amazon Clone build on top of Next.js, Tailwind, Redux, Firebase, Stripe.',
+    image_path: '/images/amazon_portfolio.png',
+    deployed_url: 'https://amazon-clone-react-omega.vercel.app/',
+    github_url: 'https://github.com/AzriZzz/amazon-clone-react',
+    category: ['react'],
+    technologies: ['React','NextJs', 'Tailwind', 'Stripe','Firebase']
+  },
+  {
+    name: 'D3.js Chart Library',
+    description: 'Create a simple chart example library using D3.js',
+    image_path: '/images/placeholder-image.png',
+    deployed_url: 'https://amazon-clone-react-omega.vercel.app/',
+    github_url: 'https://github.com/AzriZzz/amazon-clone-react',
+    category: ['angular'],
+    technologies: ['Angular','D3.js']
+  }
 ]
