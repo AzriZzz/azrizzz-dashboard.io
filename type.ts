@@ -22,4 +22,4 @@ export interface IProject {
   technologies?: string[];
 }
 
-export type Category = "react" | "angular" | "nestjs";
+export type Category = "react" | "angular" ;
