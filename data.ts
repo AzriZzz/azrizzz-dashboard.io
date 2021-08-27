@@ -101,63 +101,64 @@ export const projects: IProject[] = [
     github_url: 'https://github.com/AzriZzz/amazon-clone-react',
     category: ['angular'],
     technologies: ['Angular','D3.js']
-  },{
-    id: 4,
-    name: 'AirBnb Clone',
-    description: 'Airbnb Clone build on top of Next.js, Tailwind, Date-picker, Calender functionality, Mapbox Integration.',
-    image_path: '/images/airbnb_portfolio.png',
-    deployed_url: 'https://airbnb-clone-kappa-red.vercel.app/',
-    github_url: 'https://github.com/AzriZzz/airbnb-clone-nextjs',
-    category: ['react'],
-    technologies: ['React','NextJs', 'Mapnext', 'Tailwind']
   },
-  {
-    id: 5,
-    name: 'Amazon Clone',
-    description: 'Amazon Clone build on top of Next.js, Tailwind, Redux, Firebase, Stripe.',
-    image_path: '/images/amazon_portfolio.png',
-    deployed_url: 'https://amazon-clone-react-omega.vercel.app/',
-    github_url: 'https://github.com/AzriZzz/amazon-clone-react',
-    category: ['react'],
-    technologies: ['React','NextJs', 'Tailwind', 'Stripe','Firebase']
-  },
-  {
-    id: 6,
-    name: 'D3.js Chart Library',
-    description: 'Create a simple chart example library using D3.js',
-    image_path: '/images/placeholder-image.png',
-    deployed_url: 'https://amazon-clone-react-omega.vercel.app/',
-    github_url: 'https://github.com/AzriZzz/amazon-clone-react',
-    category: ['angular'],
-    technologies: ['Angular','D3.js']
-  },{
-    id: 7,
-    name: 'AirBnb Clone',
-    description: 'Airbnb Clone build on top of Next.js, Tailwind, Date-picker, Calender functionality, Mapbox Integration.',
-    image_path: '/images/airbnb_portfolio.png',
-    deployed_url: 'https://airbnb-clone-kappa-red.vercel.app/',
-    github_url: 'https://github.com/AzriZzz/airbnb-clone-nextjs',
-    category: ['react'],
-    technologies: ['React','NextJs', 'Mapnext', 'Tailwind']
-  },
-  {
-    id: 8,
-    name: 'Amazon Clone',
-    description: 'Amazon Clone build on top of Next.js, Tailwind, Redux, Firebase, Stripe.',
-    image_path: '/images/amazon_portfolio.png',
-    deployed_url: 'https://amazon-clone-react-omega.vercel.app/',
-    github_url: 'https://github.com/AzriZzz/amazon-clone-react',
-    category: ['react'],
-    technologies: ['React','NextJs', 'Tailwind', 'Stripe','Firebase']
-  },
-  {
-    id: 9,
-    name: 'D3.js Chart Library',
-    description: 'Create a simple chart example library using D3.js',
-    image_path: '/images/placeholder-image.png',
-    deployed_url: 'https://amazon-clone-react-omega.vercel.app/',
-    github_url: 'https://github.com/AzriZzz/amazon-clone-react',
-    category: ['angular'],
-    technologies: ['Angular','D3.js']
-  }
+  // {
+  //   id: 4,
+  //   name: 'AirBnb Clone',
+  //   description: 'Airbnb Clone build on top of Next.js, Tailwind, Date-picker, Calender functionality, Mapbox Integration.',
+  //   image_path: '/images/airbnb_portfolio.png',
+  //   deployed_url: 'https://airbnb-clone-kappa-red.vercel.app/',
+  //   github_url: 'https://github.com/AzriZzz/airbnb-clone-nextjs',
+  //   category: ['react'],
+  //   technologies: ['React','NextJs', 'Mapnext', 'Tailwind']
+  // },
+  // {
+  //   id: 5,
+  //   name: 'Amazon Clone',
+  //   description: 'Amazon Clone build on top of Next.js, Tailwind, Redux, Firebase, Stripe.',
+  //   image_path: '/images/amazon_portfolio.png',
+  //   deployed_url: 'https://amazon-clone-react-omega.vercel.app/',
+  //   github_url: 'https://github.com/AzriZzz/amazon-clone-react',
+  //   category: ['react'],
+  //   technologies: ['React','NextJs', 'Tailwind', 'Stripe','Firebase']
+  // },
+  // {
+  //   id: 6,
+  //   name: 'D3.js Chart Library',
+  //   description: 'Create a simple chart example library using D3.js',
+  //   image_path: '/images/placeholder-image.png',
+  //   deployed_url: 'https://amazon-clone-react-omega.vercel.app/',
+  //   github_url: 'https://github.com/AzriZzz/amazon-clone-react',
+  //   category: ['angular'],
+  //   technologies: ['Angular','D3.js']
+  // },{
+  //   id: 7,
+  //   name: 'AirBnb Clone',
+  //   description: 'Airbnb Clone build on top of Next.js, Tailwind, Date-picker, Calender functionality, Mapbox Integration.',
+  //   image_path: '/images/airbnb_portfolio.png',
+  //   deployed_url: 'https://airbnb-clone-kappa-red.vercel.app/',
+  //   github_url: 'https://github.com/AzriZzz/airbnb-clone-nextjs',
+  //   category: ['react'],
+  //   technologies: ['React','NextJs', 'Mapnext', 'Tailwind']
+  // },
+  // {
+  //   id: 8,
+  //   name: 'Amazon Clone',
+  //   description: 'Amazon Clone build on top of Next.js, Tailwind, Redux, Firebase, Stripe.',
+  //   image_path: '/images/amazon_portfolio.png',
+  //   deployed_url: 'https://amazon-clone-react-omega.vercel.app/',
+  //   github_url: 'https://github.com/AzriZzz/amazon-clone-react',
+  //   category: ['react'],
+  //   technologies: ['React','NextJs', 'Tailwind', 'Stripe','Firebase']
+  // },
+  // {
+  //   id: 9,
+  //   name: 'D3.js Chart Library',
+  //   description: 'Create a simple chart example library using D3.js',
+  //   image_path: '/images/placeholder-image.png',
+  //   deployed_url: 'https://amazon-clone-react-omega.vercel.app/',
+  //   github_url: 'https://github.com/AzriZzz/amazon-clone-react',
+  //   category: ['angular'],
+  //   technologies: ['Angular','D3.js']
+  // }
 ]

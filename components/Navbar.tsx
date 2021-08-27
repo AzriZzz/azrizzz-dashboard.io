@@ -12,7 +12,11 @@ const NavItem: FunctionComponent<{
   return activeItem !== name ? (
     <Link href={route}>
       <a>
-        <span className='hover:text-green-300' onClick={() => setActiveItem(name)}>{name}</span>
+        <span
+          className="mx-2 cursor-pointer hover:border-b-4 hover:text-green"
+          onClick={() => setActiveItem(name)}>
+          {name}
+        </span>
       </a>
     </Link>
   ) : null;
@@ -22,16 +26,19 @@ function Navbar() {
   const [activeItem, setActiveItem] = useState<string>("");
 
   const { pathname } = useRouter();
+  console.log(pathname);
 
   useEffect(() => {
     if (pathname === "/") setActiveItem("About");
-    if (pathname === "/projects") setActiveItem("Projects");
-    if (pathname === "/resume") setActiveItem("Resume");
-  }, []);
+    else if (pathname === "/projects") setActiveItem("Projects");
+    else if (pathname === "/resume") setActiveItem("Resume");
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <div className='flex justify-between px-5 py-3 my-3'>
-      <span className="text-xl font-bold border-b-4 border-green-300 text-green md:text-2xl">{activeItem}</span>
+    <div className="flex justify-between px-5 py-3 my-3">
+      <span className="text-xl font-bold border-b-4 border-green-300 text-green md:text-2xl">
+        {activeItem}
+      </span>
       <div className="flex space-x-5 text-lg ">
         <NavItem
           activeItem={activeItem}
@@ -54,6 +61,6 @@ function Navbar() {
       </div>
     </div>
   );
-};
+}
 
 export default Navbar;
