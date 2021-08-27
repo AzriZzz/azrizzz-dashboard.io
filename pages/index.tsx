@@ -47,13 +47,13 @@ function index() {
 
 export default index;
 
-export async function getServerSideProps(context) {
-  const res = await fetch(`${process.env.VERCEL_URL}/api/services`)
-  const data = await res.json()
+// export async function getServerSideProps(context) {
+//   const res = await fetch(`${process.env.VERCEL_URL}/api/services`)
+//   const data = await res.json()
 
-  return {
-    props: {
-      endpoint: data.services,
-    }, // will be passed to the page component as props
-  };
-}
+//   return {
+//     props: {
+//       endpoint: data.services,
+//     }, // will be passed to the page component as props
+//   };
+// }
