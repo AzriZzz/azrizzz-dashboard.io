@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang='en'>
+      <Html lang="en">
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -12,10 +12,11 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body className='bg-fixed  dark:text-white bg-gradient-to-tl from-blue-200 to-blue-500 dark:from-dark-500 dark:to-dark-700'>
+        {/* <body className='bg-fixed dark:text-white bg-gradient-to-tl from-blue-200 to-blue-500 dark:from-dark-500 dark:to-dark-700'> */}
+        <body>
           <Main />
           <NextScript />
-        </body>
+      </body>
       </Html>
     );
   }

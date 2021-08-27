@@ -15,19 +15,15 @@ function Sidebar() {
 
   return (
     <div>
-      {/* <div className='relative items-center justify-center flex-shrink-0 w-60 h-60 md:h-52 md:w-80 '>
       <Image
         src={`/images/avatar.jpg`}
-        layout="fill"
+        layout="intrinsic"
         alt="User Avatar"
-        objectFit="cover"
+        className="mx-auto rounded-full "
+        height='128'
+        width='128'
       />
-      </div> */}
-      <img
-        src={`/images/avatar.jpg`}
-        alt="User Avatar"
-        className="w-32 h-32 mx-auto rounded-full"
-      />
+       
       <h3 className="my-4 text-xl tracking-wider font-sm">
         Muhammad Azri
       </h3>
