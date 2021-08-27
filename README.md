@@ -1,6 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
+# azrizzz-dashboard.io
 
 First, run the development server:
 
@@ -12,24 +10,105 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Framer Motion
 
-## Learn More
+Adding animation
 
-To learn more about Next.js, take a look at the following resources:
+- Create an object for the animation , as an example 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+export const fadeUp = {
+  initial: {
+    opacity: 0,
+    y: 60,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+  },
+};
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+- In our component, we need to import out motion API to make sure we can utilize on our code
 
-## Deploy on Vercel
+```
+import { motion } from "framer-motion";
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+We need to add motion before our tag of each places we want to fire our animation, as an example:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# azrizzz-dashboard.io
+```
+<motion.div variants={fadeUp} initial="initial" animate="animate">
+  <h1>Hello World</h1>
+</motion.div>
+```
+
+In more advanced implementation, if we wanted to add staggering effect, as in each of individual
+item to show in different time. We need to create another object animation called stagger.
+
+```
+export const stagger = {
+  initial: {},
+  animate: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+```
+
+In our component, the way to implement is we need to wrap our first motion div with stagger object animation. Then, the children we can add fadeUp animation object without adding initial and animate
+
+```
+<motion.div variants={stagger} initial="initial" animate="animate">
+  <motion.h1 variants={fadeUp}>Hello World</motion.h1>
+</motion.div>
+```
+
+
+Adding animation on router, we need to go to _app.tsx and use AnimatePresence method to fire the animation,
+with exitBeforeEnter
+
+```
+<AnimatePresence exitBeforeEnter>
+    <Component {...pageProps} key={router.route} />
+  </AnimatePresence>
+</div>
+```
+
+Then we create a new animation object called router to give the effect of transitioning between the page
+```
+export const routerFadeUp = {
+  initial: {
+    opacity: 0
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      delay: 0.1,
+      duration: 0.1
+    },
+  },
+  exit: {
+    opacity: 0,
+    transition: {
+      delay: 0.1,
+      ease: 'easeInOut'
+    }
+  }
+};
+```
+
+In each of every page, on the most parent div, add motion.div and the variants , with an exit.
+Exit is import to be use because we want this happening when we move to another page.
+```
+<motion.div
+  variants={routerFadeUp}
+  initial="initial"
+  animate="animate"
+  exit="exit"
+>
+</motion.div>
+```

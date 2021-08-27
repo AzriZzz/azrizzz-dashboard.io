@@ -1,11 +1,19 @@
 import Bar from "../components/Bar";
 import { languages, tools } from "../data";
+import { motion } from "framer-motion";
+import { fadeUp, routerFadeUp } from "../animations";
 
 function resume() {
   return (
-    <div className="px-6 py-2">
+    <motion.div
+      className="px-6 py-2"
+      variants={routerFadeUp}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+    >
       <div className="grid gap-6 md:grid-cols-2">
-        <div>
+        <motion.div variants={fadeUp} initial="initial" animate="animate">
           <h5 className="my-3 text-2xl font-bold">Education</h5>
           <div>
             <h6 className="my-2 text-xl font-bold">
@@ -14,8 +22,8 @@ function resume() {
             <p className="font-semibold">UiTM Shah Alam</p>
             <p className="my-3">Graduated class 2017</p>
           </div>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div variants={fadeUp} initial="initial" animate="animate">
           <h5 className="my-3 text-2xl font-bold">Education</h5>
           <div>
             <h6 className="my-2 text-xl font-bold">
@@ -24,7 +32,7 @@ function resume() {
             <p className="font-semibold">UiTM Shah Alam</p>
             <p className="my-3">Graduated class 2017</p>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2">
@@ -45,7 +53,7 @@ function resume() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

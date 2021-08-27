@@ -1,10 +1,18 @@
+import { motion } from "framer-motion";
 import { FiMonitor } from "react-icons/fi";
+import { fadeUp, routerFadeUp, stagger } from "../animations";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
 
 function index() {
   return (
-    <div className="flex flex-col flex-grow px-6 pt-1">
+    <motion.div
+      variants={routerFadeUp}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="flex flex-col flex-grow px-6 pt-1"
+    >
       <p className="my-3 font-medium text-medium">
         &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -16,18 +24,24 @@ function index() {
         style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
       >
         <h6 className="my-3 text-xl font-bold tracking-wider">What I Offer</h6>
-        <div className="grid gap-6 lg:grid-cols-2">
+        <motion.div
+          className="grid gap-6 my-3 lg:grid-cols-2"
+          variants={stagger}
+          initial="initial"
+          animate="animate"
+        >
           {services?.map((service) => (
-            <div
+            <motion.div
+              variants={fadeUp}
               className="bg-gray-200 rounded-lg dark:bg-dark-200 lg:col-span-1"
               key={service.title}
             >
               <ServiceCard service={service} />
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
