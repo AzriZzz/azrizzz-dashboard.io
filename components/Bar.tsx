@@ -28,7 +28,7 @@ const Bar: FunctionComponent<{ data: ISkill }> = ({
         variants={variants}
         initial='initial'
         animate='animate'
-        className="flex items-center px-4 py-1 rounded-full bg-gradient-to-r from-green to-blue-600"
+        className="flex items-center px-4 py-1 rounded-full bg-gradient-to-r from-purple to-blue-600"
         style={{ width: level }}
       >
         <Icon className="mr-3" />

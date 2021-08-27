@@ -14,10 +14,7 @@ function index() {
       className="flex flex-col flex-grow px-6 pt-1"
     >
       <p className="my-3 font-medium text-medium">
-        &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat.&quot;
+        &quot;Hi, my name is Azri. Currently working as a Software Engineer at Talentbook Solutions. I have been assigned to multiple client across the world such CPF Singapore, Chubb, Accenture Newspage to developed high level application to help operate their business in diverse category such Health and Wellness, Retirement Dashboard and DMS (Distribution Management System)  &quot;
       </p>
       <div
         className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100"

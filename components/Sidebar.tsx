@@ -37,7 +37,7 @@ function Sidebar() {
       </a>
 
       {/* social icons */}
-      <div className="flex justify-around mx-auto my-5 w-12/12 text-green md:w-full">
+      <div className="flex justify-around mx-auto my-5 w-12/12 text-purple md:w-full">
         <a href="">
           <AiFillGithub className="w-8 h-8 cursor-pointer" />
         </a>
