@@ -8,8 +8,9 @@ import { Category } from "../type";
 
 function Projects() {
   const [projects, setProjects] = useState(projectsData);
-
   const [active, setActive] = useState("all");
+
+  const [showDetail, setShowDetail] = useState<number | null>(null);
 
   const handlerFilterCategory = (category: Category | "all") => {
     if (category === "all") {
@@ -34,7 +35,6 @@ function Projects() {
       initial="initial"
       animate="animate"
       exit="exit"
-
     >
       <ProjectsNavbar
         handlerFilterCategory={handlerFilterCategory}
@@ -53,7 +53,11 @@ function Projects() {
             variants={fadeUp}
             key={project.name}
           >
-            <ProjectCard project={project} />
+            <ProjectCard
+              project={project}
+              showDetail={showDetail}
+              setShowDetail={setShowDetail}
+            />
           </motion.div>
         ))}
       </motion.div>

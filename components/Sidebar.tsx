@@ -29,8 +29,8 @@ function Sidebar() {
       </h3>
       <p className="px-2 py-1 my-3 dark:bg-black-500">Frontend Engineer</p>
       <a
-        href=""
-        download="name"
+        href="/assets/azri-resume.pdf"
+        download="azri-resume.pdf"
         className="flex items-center content-center justify-center px-2 py-1 my-3 dark:bg-black-500"
       >
         Download Resume
