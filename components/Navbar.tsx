@@ -39,7 +39,7 @@ function Navbar() {
       <span className="text-xl font-bold border-b-4 border-purple-300 text-purple md:text-2xl">
         {activeItem}
       </span>
-      <div className="flex space-x-5 text-lg ">
+      <div className="flex space-x-5 text-lg dark:text-white">
         <NavItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}

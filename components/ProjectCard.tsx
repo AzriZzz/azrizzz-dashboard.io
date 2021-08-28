@@ -29,7 +29,7 @@ const ProjectCard: FunctionComponent<{
       <Image
         src={image_path}
         alt={name}
-        className="cursor-pointer"
+        className="cursor-pointer bg-purple"
         onClick={() => setShowDetail(id)}
         layout="responsive"
         height="150"
@@ -39,7 +39,7 @@ const ProjectCard: FunctionComponent<{
       <p className="my-2 text-center">{name}</p>
 
       {showDetail === id && (
-        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:p-10 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
+        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-white rounded-lg md:p-10 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
           <motion.div variants={stagger} initial="initial" animate="animate">
             <motion.div variants={fadeUp} className='border-4 border-gray-100'>
               <Image
@@ -62,7 +62,7 @@ const ProjectCard: FunctionComponent<{
                 target="_blank"
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
               >
-                <AiFillGithub /> <span>Github</span>
+                <AiFillGithub className='text-purple' /> <span>Github</span>
               </motion.a>
               <motion.a
                 variants={fadeUp}
@@ -70,7 +70,7 @@ const ProjectCard: FunctionComponent<{
                 target="_blank"
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
               >
-                <AiFillProject /> <span>Project</span>
+                <AiFillProject className='text-purple' /> <span>Project</span>
               </motion.a>
             </motion.div>
           </motion.div>
@@ -107,7 +107,7 @@ const ProjectCard: FunctionComponent<{
             onClick={() => setShowDetail(null)}
             className="absolute p-1 bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-dark-200"
           >
-            <MdClose size={30} />
+            <MdClose className='text-purple' size={30} />
           </motion.button>
         </div>
       )}
