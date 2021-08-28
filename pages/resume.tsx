@@ -14,13 +14,13 @@ function resume() {
     >
       <div className="grid gap-6 md:grid-cols-2">
         <motion.div variants={fadeUp} initial="initial" animate="animate">
-          <h5 className="my-3 text-2xl font-bold">Education</h5>
+          <h5 className="my-3 text-2xl font-bold">Work Experience</h5>
           <div>
             <h6 className="my-2 text-xl font-bold">
-              Bachelor of Computer Science
+              Software Engineer
             </h6>
-            <p className="font-semibold">UiTM Shah Alam</p>
-            <p className="my-3">Graduated class 2017</p>
+            <p className="font-semibold">Talentbook Solutions</p>
+            <p className="my-3">2019-Now</p>
           </div>
         </motion.div>
         <motion.div variants={fadeUp} initial="initial" animate="animate">
