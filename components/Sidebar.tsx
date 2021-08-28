@@ -1,17 +1,18 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
+import { AiOutlineMail } from "react-icons/ai";
+import { FiSun, FiMoon } from "react-icons/fi";
 import Image from "next/image";
 
-import { useTheme } from 'next-themes'
+import { useTheme } from "next-themes";
 
 function Sidebar() {
-
   const { theme, setTheme } = useTheme();
 
   const changeTheme = () => {
-    setTheme( theme=== 'light' ? 'dark' : 'light')
-  }
+    setTheme(theme === "light" ? "dark" : "light");
+  };
 
   return (
     <div>
@@ -20,13 +21,11 @@ function Sidebar() {
         layout="intrinsic"
         alt="User Avatar"
         className="mx-auto rounded-full "
-        height='128'
-        width='128'
+        height="128"
+        width="128"
       />
-       
-      <h3 className="my-4 text-xl tracking-wider font-sm">
-        Muhammad Azri
-      </h3>
+
+      <h3 className="my-4 text-xl tracking-wider font-sm">Muhammad Azri</h3>
       <p className="px-2 py-1 my-3 dark:bg-black-500">Frontend Engineer</p>
       <a
         href="/assets/azri-resume.pdf"
@@ -37,7 +36,7 @@ function Sidebar() {
       </a>
 
       {/* social icons */}
-      <div className="flex justify-around mx-auto my-5 w-12/12 text-purple md:w-full">
+      <div className="flex justify-center mx-auto my-5 space-x-5 w-12/12 text-purple md:w-full">
         <a href="">
           <AiFillGithub className="w-8 h-8 cursor-pointer" />
         </a>
@@ -57,7 +56,20 @@ function Sidebar() {
         </div>
         <p className="my-2">muhdazri.biz@gmail.com</p>
       </div>
-      <button
+
+      <div className="flex justify-center pt-20 mx-auto space-x-5 text-2xl ">
+        <AiOutlineMail
+          className="cursor-pointer text-purple"
+          onClick={() => window.open("mailto:muhdazri.biz@gmail.com")}
+        />
+
+        {theme === "light" ? (
+          <FiSun className="cursor-pointer text-purple" onClick={changeTheme} />
+        ) : (
+          <FiMoon className="cursor-pointer text-purple" onClick={changeTheme} />
+        )}
+      </div>
+      {/* <button
         className="w-8/12 px-5 py-2 my-2 text-sm text-black border-2 rounded-full dark:text-white focus:outline-none"
         onClick={() => window.open("mailto:muhdazri.biz@gmail.com")}
       >
@@ -65,7 +77,7 @@ function Sidebar() {
       </button>
       <button onClick={changeTheme} className="w-8/12 px-5 py-2 my-2 text-sm text-black border-2 rounded-full outline-none dark:text-white">
         Toggle Theme
-      </button>
+      </button> */}
     </div>
   );
 }

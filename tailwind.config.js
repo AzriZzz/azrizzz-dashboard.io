@@ -25,7 +25,7 @@ module.exports = {
           500: '#0f1115',
           700: '#202125'
         }
-      },
+      }
     },
   },
   variants: {
@@ -33,5 +33,7 @@ module.exports = {
       boxShadow: ['dark']
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow')
+  ],
 };

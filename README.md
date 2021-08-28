@@ -11,6 +11,11 @@ yarn dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
+## tailwindcss-textshadow
+Url : https://github.com/iunteq/tailwindcss-textshadow
+
+Purposes: To gave user interaction on hovering elements to show it's detail.
+
 
 ## Framer Motion
 
