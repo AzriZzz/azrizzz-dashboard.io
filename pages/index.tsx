@@ -18,7 +18,7 @@ function index() {
         style={{ marginLeft: "-.5rem", marginRight: "-.5rem" }}
       >
         Hi, my name is Azri. Currently working as a Software Engineer at
-        Talentbook Solutions. I have been assigned to multiple client across the
+        Talentbook Solutions. I have been involved with multiple client across the
         world such CPF Singapore, Chubb, Accenture Newspage to developed high
         level application to help operate their business in diverse domain such
         Health and Wellness, Retirement Dashboard and DMS (Distribution
