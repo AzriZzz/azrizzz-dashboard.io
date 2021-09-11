@@ -17,7 +17,7 @@ function Sidebar() {
   return (
     <div>
       <Image
-        src={`/images/avatar.jpg`}
+        src={`/images/profile_image.png`}
         layout="intrinsic"
         alt="User Avatar"
         className="mx-auto rounded-full "
