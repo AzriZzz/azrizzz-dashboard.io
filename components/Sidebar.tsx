@@ -21,7 +21,7 @@ function Sidebar() {
         layout="intrinsic"
         alt="User Avatar"
         className="mx-auto rounded-full "
-        height="128"
+        height="145"
         width="128"
       />
 
